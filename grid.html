@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "lsidebar main rsidebar"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 5px;
+}
+		header.header {
+			grid-area: header;
+    border: 2px solid;
+    height: 50px;
+}
+aside.lsidebar {
+	grid-area: lsidebar;
+    border: 2px solid red;
+    height: 100dvh;
+}
+aside.rsidebar {
+	grid-area: rsidebar;
+    border: 2px solid red;
+    height: 100dvh;
+}
+		main.main-container {
+			grid-area: main;
+    border: 2px solid blue;
+    height: 100dvh;
+}
+		footer.footer {
+			grid-area: footer;
+    border: 2px solid green;
+    height: 50px;
+}
+@media(max-width: 500px) {
+	header.header { grid-area: 1 / span 3; }
+	main.main-container { grid-area: 2 / span 3; }
+	aside.lsidebar { grid-area: 3 / span 3; }
+	aside.rsidebar { grid-area: 4 / span 3; }
+	footer.footer { grid-area: 5 / span 3; }
+	.grid-container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+}
+	</style>
+</head>
+<body>
+	<div class="grid-container">
+		<header class="header">header</header>
+		<aside class="lsidebar">
+			left sidebar
+		</aside>
+		<main class="main-container">
+			main content
+		</main>
+		<aside class="rsidebar">
+			right sidebar
+		</aside>
+		<footer class="footer">footer</footer>
+	</div>
+</body>
+</html>

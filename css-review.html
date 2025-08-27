@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		:root {
+			--color: red;
+		}
+		.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "side main"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+}
+header.header nav ul {
+    display: flex
+;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+}
+		header.header {
+    
+    height: 50px;
+    grid-area: header;
+    background: #000;
+    color: #fff;
+    display: flex
+;
+    justify-content: space-between;
+}
+aside.left-side {
+    
+    height: 100dvh;
+    grid-area: side;
+    background: black;
+}
+main.main-content {
+   
+    height: 100dvh;
+    grid-area: main;
+}
+footer.footer {
+    
+    height: 50px;
+    grid-area: footer;
+}
+img.logo {
+    margin: 5px;
+}
+input[type="search"] {
+    padding: 14px;
+    width: 200px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+form.registration {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    background-image: linear-gradient(to right, #6a7ad5, #c3cc67, #5ee0d4);
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    font-family: cursive;
+}
+
+@media(max-width: 500px) {
+	.grid-container {
+	    display: grid;
+	    grid-template-areas:
+	        "header"
+	        "side"
+	        "main"
+	        "footer";
+	    grid-template-columns: 1fr;
+	}
+}
+
+	</style>
+</head>
+<body>
+	<div class="grid-container">
+		<header class="header">
+			<img src="logo.avif" class="logo" alt="logo" height="40px">
+			<nav>
+				<ul>
+					<li>Home</li>
+					<li>About</li>
+					<li>Contact</li>
+				</ul>
+			</nav>
+			<!-- <form>
+				<input type="search" name="" placeholder="Search.....">
+			</form> -->
+		</header>
+		<aside class="left-side"></aside>
+		<main class="main-content">
+			<form action="" method="get" class="registration">
+				<div class="input-group">
+					<label>First Name</label>
+					<input type="text" value="" name="first_name" placeholder="First Name" required>
+				</div>
+				<div class="input-group">
+					<label>Last Name</label>
+					<input type="text" value="" name="first_name" placeholder="First Name" required>
+				</div>
+				<div class="input-group">
+					<label>Email</label>
+					<input type="email" name="">
+				</div>
+				<div class="input-group">
+					<label>Phone</label>
+					<input type="text" name="">
+				</div>
+				<div class="input-group">
+					<label>DOB</label>
+					<input type="date" name="">
+				</div>
+				<div class="input-group">
+					<label>Gender</label>
+					<select>
+						<option>Male</option>
+						<option>Female</option>
+						<option>Other</option>
+					</select>
+				</div>
+				<div class="input-group">
+					<label>Hobbies</label>
+					Cricket <input type="checkbox" name="">
+					Hockey <input type="checkbox" name="">
+					Cricket <input type="checkbox" name="">
+					Cricket <input type="checkbox" name="">
+					Cricket <input type="checkbox" name="">
+				</div>
+			</form>
+
+			<img src="pngimage.png" class="sddo-img" width="200px">
+		</main>
+		<footer class="footer">
+			Copy@2025 M.Farhan
+		</footer>
+	</div>
+	
+</body>
+</html>

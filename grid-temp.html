@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout with Sidebar Menu</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto; /* header, content, footer */
+      grid-template-columns: 200px 1fr;  /* sidebar + main */
+      grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+      gap: 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      grid-area: header;
+      border: 2px solid red;
+      padding: 10px;
+      display: grid;
+      grid-template-columns: 150px 1fr 200px; /* logo | menu | search */
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .search-bar input {
+      padding: 5px;
+      width: 100%;
+      max-width: 180px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    aside {
+      grid-area: sidebar;
+      border: 2px solid red;
+      padding: 10px;
+    }
+
+    /* Sidebar menu */
+    .sidebar-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .sidebar-menu li {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #f9f9f9;
+    }
+
+    .sidebar-menu a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .sidebar-menu a:hover {
+      background: #007BFF;
+      color: white;
+    }
+
+    main {
+      grid-area: main;
+      border: 2px solid red;
+      padding: 20px;
+    }
+
+    footer {
+      grid-area: footer;
+      border: 2px solid red;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Registration Form Styles */
+    .registration-form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .registration-form h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .registration-form input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .registration-form button {
+      padding: 10px;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .registration-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MyLogo</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+    </div>
+  </header>
+
+  <aside>
+    <ul class="sidebar-menu">
+      <li class="parent">
+        <a href="#">Dashboard</a>
+        <ul class="child-menu">
+            <li>Child 1</li>
+            <li>Child 1</li>
+            <li>Child 1</li>
+            <li>Child 1</li>
+        </ul>
+      </li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">Messages</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <form class="registration-form">
+      <h2>Register</h2>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <button type="submit">Register</button>
+    </form>
+  </main>
+
+  <footer>Footer</footer>
+</body>
+</html>
