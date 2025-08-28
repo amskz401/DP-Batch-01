@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Media Quries</title>
+	<style>
+		body {
+			background: aqua;
+		}
+		.myBtn {
+		    background: blue;
+		    color: white;
+		    font-size: 30px;
+		    padding: 5px;
+		}
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*@media ( max-width  500px )  {
+	.myBtn {
+		background: red;
+	}
+}*/
+
+/*@media ( min-width: 500px ) and (max-width: 600px) {
+	.myBtn {
+		background: red;
+	}
+}*/
+
+/*@media (width >= 500px) and (width <= 600px) {
+	.myBtn {
+		background: #95651e;
+	}
+}
+
+@media ( min-width: 601px ) and (max-width: 700px) {
+	.myBtn {
+		background: green;
+		color: green;
+	}
+}
+
+@media ( min-width: 701px ) and (max-width: 800px) {
+	.myBtn {
+		background: yellow;
+	}
+}
+
+@media ( min-width: 2000px ) {
+	.myBtn {
+		background: white;
+		border: 2px solid blue;
+	}
+}*/
+
+/*@media print {
+	.myBtn {
+		background: #cb2469 !important;
+	}
+}*/
+
+@media (width <= 500px) {
+	main {
+	    display: block;
+	}
+}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header></header>
+		<main>
+			<div>one</div>
+			<div>two</div>
+		</main>
+		<footer></footer>
+	</div>
+</body>
+</html>

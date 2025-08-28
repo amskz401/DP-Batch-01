@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
   <title>Grid Layout with Sidebar Menu</title>
   <style>
     body {
@@ -143,21 +144,45 @@
     .registration-form button:hover {
       background-color: #0056b3;
     }
+
+    .burger-menu {
+    display: none;
+}
+
+@media (max-width: 500px) {
+  .burger-menu {
+      display: block;
+  }
+  nav {
+    display: none;
+  }
+
+}
+
+/*@media (width <= 500) {
+
+}*/
+
   </style>
 </head>
 <body>
   <header>
     <div class="logo">MyLogo</div>
-    <nav>
+    <nav id="header-menu">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#"> <i class="fa fa-home"></i> Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+    
     <div class="search-bar">
       <input type="text" placeholder="Search...">
+      &pound;
+    </div>
+    <div class="burger-menu" onclick="show_hide_menu()">
+      <i class="fa-solid fa-bars"></i>
     </div>
   </header>
 
@@ -188,8 +213,22 @@
       <input type="password" placeholder="Confirm Password" required>
       <button type="submit">Register</button>
     </form>
+    <div>
+      text after form
+    </div>
+    <div class="newdiv">
+      text in new div
+    </div>
+    <div>
+      text aFTER NEW DIV
+    </div>
   </main>
 
   <footer>Footer</footer>
+  <script>
+    // function show_hide_menu() {
+    //   document.get
+    }
+  </script>
 </body>
 </html>
