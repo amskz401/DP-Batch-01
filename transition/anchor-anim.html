@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Links</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      max-width: 1000px;
+      text-align: center;
+    }
+
+    a {
+      display: inline-block;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      border-radius: 6px;
+      transition: all 0.4s ease;
+      position: relative;
+    }
+
+    /* Unique hover animations */
+    .link1:hover { 
+      color: #e91e63; 
+      transform: scale(1.2); 
+    }
+    .link2:hover { 
+      background: #2196f3; 
+      color: white; 
+    }
+    .link3:hover { 
+      border-bottom: 2px solid #4caf50; 
+    }
+    .link4:hover { 
+      letter-spacing: 3px; 
+    }
+    .link5:hover { 
+      transform: rotate(-5deg); 
+    }
+    .link6:hover { 
+      color: #ff9800; 
+      text-decoration: underline; 
+    }
+    .link7:hover { 
+      background: #673ab7; 
+      color: white; 
+      transform: scale(1.1); 
+    }
+    .link8:hover { 
+      border: 2px solid #009688; 
+    }
+    .link9:hover { 
+      text-shadow: 0 0 10px #f44336; 
+    }
+    .link10:hover { 
+      transform: translateY(-5px); 
+    }
+    .link11:hover { 
+      transform: translateX(10px); 
+    }
+    .link12:hover { 
+      opacity: 0.6; 
+    }
+    .link13:hover { 
+      background: linear-gradient(45deg, #ff6f61, #ffcc00); 
+      color: white; 
+    }
+    .link14:hover { 
+      border-radius: 20px; 
+      background: #00bcd4; 
+      color: white; 
+    }
+    .link15:hover { 
+      text-decoration: line-through; 
+      color: #9c27b0; 
+    }
+    .link16:hover { 
+      border: 2px dashed #ff5722; 
+    }
+    .link17:hover { 
+      transform: scale(0.9); 
+      background: #607d8b; 
+      color: white; 
+    }
+    .link18:hover { 
+      font-weight: bold; 
+      color: #3f51b5; 
+    }
+    .link19:hover { 
+      background: black; 
+      color: white; 
+      letter-spacing: 2px; 
+    }
+    .link20:hover { 
+      transform: rotateY(180deg); 
+      background: #5c6fd6; 
+      color: white; 
+    }
+  </style>
+</head>
+<body>
+  <div class="links">
+    <a href="#" class="link1">Link 1</a>
+    <a href="#" class="link2">Link 2</a>
+    <a href="#" class="link3">Link 3</a>
+    <a href="#" class="link4">Link 4</a>
+    <a href="#" class="link5">Link 5</a>
+    <a href="#" class="link6">Link 6</a>
+    <a href="#" class="link7">Link 7</a>
+    <a href="#" class="link8">Link 8</a>
+    <a href="#" class="link9">Link 9</a>
+    <a href="#" class="link10">Link 10</a>
+    <a href="#" class="link11">Link 11</a>
+    <a href="#" class="link12">Link 12</a>
+    <a href="#" class="link13">Link 13</a>
+    <a href="#" class="link14">Link 14</a>
+    <a href="#" class="link15">Link 15</a>
+    <a href="#" class="link16">Link 16</a>
+    <a href="#" class="link17">Link 17</a>
+    <a href="#" class="link18">Link 18</a>
+    <a href="#" class="link19">Link 19</a>
+    <a href="#" class="link20">Link 20</a>
+  </div>
+</body>
+</html>

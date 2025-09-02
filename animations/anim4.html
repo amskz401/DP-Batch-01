@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.container {
+			width: 500px;
+			height: 500px;
+			background: #ccc;
+			position: relative;
+		}
+
+		.box {
+			width: 100px;
+			height: 100px;
+			background: blue;
+			animation: box 4s infinite linear;
+			position: absolute;
+		}
+		
+
+		@keyframes box {
+			
+
+
+			0% {
+				left: 0;
+				top: 0;
+				background: green;
+			}
+			25% {
+				left: calc(100% - 100px);
+				top: 0;
+				background: red;
+			}
+			50% {
+				left: calc(100% - 100px);
+				top: calc(100% - 100px);
+				background: navajowhite;
+			}
+			75% {
+				left: 0;
+				top: calc(100% - 100px);
+				background: aquamarine;
+			}
+			100% {
+				left: 0;
+				top: 0;
+				background: blue;
+			}
+  
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box"></div>
+	</div>
+</body>
+</html>

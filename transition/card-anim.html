@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Card Transitions</title>
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			background: #f4f4f9;
+		}
+
+		.card-container {
+			display: flex;
+			gap: 20px;
+		}
+
+		.card {
+			background: white;
+			border-radius: 12px;
+			width: 250px;
+			padding: 20px;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			transition: all 0.5s ease;
+			cursor: pointer;
+		}
+
+		/* Card 1 effect: Scale */
+		.card1:hover {
+			transform: scale(1.05);
+			box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+		}
+
+		/* Card 2 effect: Lift up */
+		.card2:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+		}
+
+		/* Card 3 effect: Rotate + Color change */
+		.card3:hover {
+			transform: rotate(2deg);
+			background: #5c6fd6;
+			color: white;
+			box-shadow: 0 12px 25px rgba(92,111,214,0.4);
+		}
+
+		h3 {
+			margin-top: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="card-container">
+
+		<div class="card card1">
+			<h3>Card 1</h3>
+			<p>This card scales up on hover.</p>
+		</div>
+		<div class="card card2">
+			<h3>Card 2</h3>
+			<p>This card lifts upward smoothly.</p>
+		</div>
+		<div class="card card3">
+			<h3>Card 3</h3>
+			<p>This card rotates slightly & changes color.</p>
+		</div>
+	</div>
+</body>
+</html>

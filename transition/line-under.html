@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		a.link {
+    text-decoration: none;
+    position: relative;
+}
+a.link::after {
+    content: "";
+    width: 0%;
+    display: flex;
+    height: 0px;
+    background: blue;
+    position: absolute;
+    transition: all 0.5s linear;
+}
+a.link:hover::after {
+    width: 100%;
+    height: 1px;
+}
+
+	</style>
+</head>
+<body>
+	<a href="" class="link">This is link</a>
+</body>
+</html>
