@@ -1,0 +1,60 @@
+header.top-header nav {
+    background-color: #44bbaf !important;
+}
+header.top-header a.nav-link {
+    color: white !important;
+}
+.search-form input {
+    background: none !important;
+    color: white !important;
+    width: 300px;
+}
+.search-form i.bi {
+    position: relative;
+    top: 6px;
+    right: 34px;
+    cursor: pointer;
+    color: white;
+}
+.top-section {
+    background-image: linear-gradient(to bottom, #44bbaf, #fff);
+    min-height: 80vh;
+}
+.search-input {
+    width: 80%;
+}
+span#basic-addon2 {
+    background: #44bbaf;
+    color: #fff;
+}
+.inner-section{
+    width: 50%;
+}
+.card.card-hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.card.card-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px;
+}
+.effect {
+    background-image: linear-gradient(to right, #94ad83, #696dd4, #cfcfeb);
+    color: white;
+    padding: 10px;
+
+}
+.regsiter-form{
+    width: 500px;
+}
+
+/*@keyframes my_effect {
+    from {
+        transform: translate();
+        left: 0;
+    }
+    to {
+        transform: translate();
+        left: 100%;
+    }
+}*/

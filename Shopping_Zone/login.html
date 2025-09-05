@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+  <header class="top-header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="public/images/logo.png" height="80px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"><i class="bi bi-house-door-fill"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Men's</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Women's</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Unisex</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">New Arrival</a>
+            </li>
+          </ul>
+          <form class="d-flex search-form" role="search">
+            <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search"/>
+            <i class="bi bi-search"></i>
+          </form>
+          <div class="account-btn">
+            <a href="#" class="btn btn-outline-success text-white border-white"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+            <a href="#" class="btn btn-outline-success text-white border-white"><i class="bi bi-person-fill"></i>Singup</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid top-section d-flex align-items-center justify-content-center flex-column">
+     <div class="inner-section p-4 d-flex align-items-center justify-content-center flex-column shadow">
+       <h1 class="text-center text-white mb-3">Login</h1>
+       <div class="regsiter-form">
+       	<form action="">
+       		<div class="form-group">
+  					<label>Email</label>
+  					<input type="email" name="" class="form-control">
+  				</div>
+  				<div class="form-group">
+  					<label>Password</label>
+  					<div class="input-group mb-3">
+              <input type="password" class="form-control" placeholder="" id="password-field">
+              <span class="input-group-text" id="basic-addon2"><span onclick="toggle_password()" id="show_pass"><i class="bi bi-eye-fill"></i></span></span>
+            </div>
+
+  				</div>
+          <div class="form-check form-switch mt-2">
+          <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked>
+          <label class="form-check-label" for="switchCheckChecked">Remember me</label>
+        </div>
+  				<div class="form-group mt-3">
+  					<input type="submit" name="register" value="Login" class="btn btn-primary">
+  				</div>
+  				
+  			</form>
+      </div>
+    </div>
+  </div>
+</header> 
+
+<script src="public/bootstrap/js/bootstrap.min.js"></script>
+<script>
+  function toggle_password() {
+    if(document.getElementById("password-field").type == 'password') {
+    document.getElementById("password-field").type = "text";
+  } else {
+    document.getElementById("password-field").type = "password";
+  }
+  }
+</script>
+</body>
+</html>
